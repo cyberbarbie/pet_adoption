@@ -42,7 +42,20 @@ def animals(pet_type):
 def pet(pet_type, pet_id):
     pet = pets[pet_type][pet_id]
     pet_name = pet["name"]
-    html = f"<h1>{pet_name}</h1>"
+    pet_img = pet["url"]
+    pet_description = pet["description"]
+    pet_breed = pet["breed"]
+    pet_age = pet["age"]
+    html = f"""
+    <h1>{pet_name}</h1>
+    <img alt="image of pet breed: {pet_breed}" src="{pet_img}">
+    <p>{pet_description}</p>
+    <ul>
+        <li> Age: {pet_age}</li>
+        <li> Breed: {pet_breed}</li>
+    </ul>
+    <a href="/">Return Home</a>
+    """
     return html
 
 
