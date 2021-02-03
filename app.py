@@ -1,4 +1,4 @@
-from flask import Flask
+from flask import Flask, render_template
 from helper import pets
 
 app = Flask(__name__)
@@ -8,14 +8,7 @@ app.debug = True
 @app.route('/')
 @app.route('/home')
 def index():
-    return """<h1>Adopt a Pet!</h1>
-    <p>Browse through the links below to find your new furry friend:</p>
-    <ul>
-        <li><a href="/animals/dogs">Dogs</a></li>
-        <li><a href="/animals/cats">Cats</a></li>
-        <li><a href="/animals/rabbits">Rabbits</a></li>
-    </ul>
-    """
+    return render_template("index.html")
 
 
 
@@ -40,23 +33,8 @@ def animals(pet_type):
 
 @app.route('/animals/<pet_type>/<int:pet_id>')
 def pet(pet_type, pet_id):
-    pet = pets[pet_type][pet_id]
-    pet_name = pet["name"]
-    pet_img = pet["url"]
-    pet_description = pet["description"]
-    pet_breed = pet["breed"]
-    pet_age = pet["age"]
-    html = f"""
-    <h1>{pet_name}</h1>
-    <img alt="image of pet breed: {pet_breed}" src="{pet_img}">
-    <p>{pet_description}</p>
-    <ul>
-        <li> Age: {pet_age}</li>
-        <li> Breed: {pet_breed}</li>
-    </ul>
-    <a href="/">Return Home</a>
-    """
-    return html
+    return render_template("pet.html", pet=pets[pet_type][pet_id])
+    
 
 
 
