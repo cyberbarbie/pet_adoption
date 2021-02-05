@@ -15,8 +15,6 @@ To create a web app in Flask that displays the different pets and information ab
 - [ ] Authentication
 - [ ] Create User Accounts for people to bookmark fave pets, upload pets to DB
 - [ ] CRUD functionality (view, add, update and remove pet info)
-- [ ] Add a contact form
-- [ ] Create 
 - [ ] Style the content
 - [ ] Add a dark mode theme
 - [ ] Deploy with Heroku
