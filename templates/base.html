@@ -1,0 +1,15 @@
+<!-- the code we'll be reusing in multiple templates -->
+<html>
+    <body>
+        <div>
+            <nav>
+                <a href="{{ url_for('index') }}">Home</a>
+                <a href="{{ url_for('about') }}">About</a>
+                <a href="{{ url_for('index') }}">Pets</a>
+                <a href="{{ url_for('contact') }}">Contact</a>
+            </nav>
+        </div>
+    {% block content %}
+    {% endblock %}
+    </body>
+</html>

@@ -10,7 +10,9 @@ app.debug = True
 def index():
     return render_template("index.html")
 
-
+@app.route('/about')
+def about():
+    return render_template("about.html")
 
 @app.route('/animals/<pet_type>')
 def animals(pet_type):
@@ -34,7 +36,10 @@ def animals(pet_type):
 @app.route('/animals/<pet_type>/<int:pet_id>')
 def pet(pet_type, pet_id):
     return render_template("pet.html", pet=pets[pet_type][pet_id])
-    
+
+@app.route('/contact')
+def contact():
+    return render_template("contact.html")    
 
 
 

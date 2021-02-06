@@ -1,11 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+{% extends "base.html" %}
+{% block content %}
+
     <h1> Cyber Pets </h1>
     <p>Browse through the links below to find your new furry friend!</p>
     <ul>
@@ -13,5 +8,4 @@
         <li><a href="/animals/cats">Cats</a></li>
         <li><a href="/animals/rabbits">Rabbits</a></li>
     </ul>
-</body>
-</html>
+{% endblock %}

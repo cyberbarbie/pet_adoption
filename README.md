@@ -18,5 +18,4 @@ To create a web app in Flask that displays the different pets and information ab
 - [ ] Data storage- such as DB or file we can read and append data to
 - [ ] Format the data and style it on the pages
 - [ ] Add a contact form
-- [ ] Create 
 - [ ] Contact the media
