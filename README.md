@@ -10,12 +10,11 @@
 To create a web app in Flask that displays the different pets and information about each
 
 ## Future Tasks
+- [ ] Add a form to collect user data
+- [ ] Add a SQL Database
+- [ ] Authentication
+- [ ] Create User Accounts for people to bookmark fave pets, upload pets to DB
 - [ ] CRUD functionality (view, add, update and remove pet info)
-- [ ] Add more pet types
-- [ ] Add search functionality
-- [ ] Tweet this functionality
-- [ ] Create user accounts *
-- [ ] Data storage- such as DB or file we can read and append data to
-- [ ] Format the data and style it on the pages
-- [ ] Add a contact form
-- [ ] Contact the media
+- [ ] Style the content
+- [ ] Add a dark mode theme
+- [ ] Deploy with Heroku
